@@ -13,3 +13,7 @@ Traverse from the head until the next element is null. This can be done very eas
 ## Inserting a node
 
 There are three cases for inserting a node into a Linked List. The first case is inserting at the front of the Linked List. This will be added before the head. The new node will then become the new head. The function I've created to do this is called **push()**. The time complexity of this operation is O(1). The second case is inserting after a given node. You are given a pointer to a node and you will need to traverse the list and insert after the given node. This operation is O(1) time complexity. The function I've created to handle this is **insertAfter()**. The final case is when you need to insert at the end of the list. This is always added after the last node. You will need to traverse the whole linked list. Time complexity is O(n) unless you have an extra pointer to the tail of the list in which case it is an O(1) operation. The function I've created to handle this is called **append()**.
+
+## Deleting a node
+
+Given a 'key', delete the first occurrence in the linked list. Traverse the list until the key is found. Keep track of the previous node of the node to be deleted. Change the next of the previous node. Free memory for the node to be deleted.
